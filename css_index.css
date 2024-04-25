@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    /* esto es para que el cursor cambie cada que pase por encima del objeto */
+}
+header{
+    width: 100%;
+    height: 30px;
+
+
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#google{
+    
+    /* justify-content: center; */
+    /* display: flex; */
+    /* quiere decir que se va mover de manera flexible */
+    /* flex-direction: column; */
+    /* se pone en columna */
+    /* justify-content: center; */
+    /* justify content es para justificar el contenido  */
+    /* align-items: center; */
+    /* para alinear los objetos  */
+
+    
+}
+.nav-right-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: auto;
+
+}
+.nav-right-section a{
+    margin-right: 25px;
+    color: rgb(39, 37, 37);
+}
+ul{
+    list-style: none;
+    /* esto es para que la lista no tenga estilo */
+}
+.menu-icon{
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
+    /* esto quiere decir que el fondo va a ser una imagen */
+    width: 30px;
+    background-size: contain;
+     /* para que la medida del background sea la del contenedor */
+    background-repeat: no-repeat;
+   /* para que no se repita la imagen */
+}
+.nav-right-section img {
+    margin-left: 10px;
+    border-radius: 60px;
+    width: 30px;
+    
+}
+main{
+    margin: 90px;
+    text-align: center;
+}
+.main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding-right: 32%;
+}
+.main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-input-container input{
+    border: none;
+    width: 530px;
+    height: 40px;
+    outline: none;
+}
+.main-input-container:hover{
+/* el hover es para cuando se pase el mouse arriba de el objeto que quiero cambiar de color */
+box-shadow: 0 1px 6px 0px #22212447;
+/* el box shadow es para cuando quiero que cambie de color el objeto */
+/* las medidas puestas son para: arriba,abajo,izquierda,derecha */
+border-color: #dfe1e5;
+}
+.search-icon{
+    background-image: url("https://seekicon.com/free-icon-download/search_20.svg");
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-left: 8%;
+}
+.micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 5%;
+}
+.cam-icon{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 8%;
+
+}
+.main-buttons div{
+    display: inline-block;
+    /* bloque en linea para que los botones se pongan uno al lado del otro */
+
+}
+.main-buttons button{
+    border: 1px solid transparent;
+    /* para quitar el borde */
+    height: 36px;
+    background-color: #f8f9fa;
+    margin-right: 10px;
+    border-radius: 5px solid #f8f9fa; 
+    color: #3c4043;
+}
+.main-buttons button:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0, .1);
+    border: 1px solid #dadce0;
+  
+}
+/* estilo footer */
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    top: 120%;
+    position: absolute;
+    font-size: 13px;
+    display: grid;
+    /* rejas, trabaja con celdas */
+    grid-template-columns: 1fr 1fr;
+    /* cada fr es con las columnas con las que se va a trabajar */
+    align-items: center;
+    /* alinear los items*/
+    border-top: 1px solid #e4e4e4;
+    /* borde de arriba */
+    bottom: 2px;
+    /* la parte de abajo, top arriba, bottom abajo */
+    padding: 10px;
+}
+.footer-left{
+    justify-content: left;
+}
+.footer-right{
+    justify-content: right;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+footer ul li a{
+
+    color: #70757a;
+    margin: 10px;
+}
